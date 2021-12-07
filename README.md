@@ -31,3 +31,8 @@ b) Después la card donde iria la opicón de la hamburguesa a elegir(a posterior
 2) Alpine.js es algo nuevo para mi (prefiero react obvio), mi mentor del proyecto me la sugirio para dar unos retoques al Nav bar, y puedo decir que esta bueno, me permitio aplicar JavaScript sin la necesidad de crear un archivo aparte aplicando directamente al html de mi proyecto.
 
 💻A continuación les dejo unos screen del proyecto y en el repositorio pueden ver el codigo. Cualquier cosa no duden en contactarme! 
+
+
+![Untitled](https://user-images.githubusercontent.com/84105167/145101792-316a496b-95fb-4937-8fef-1d297d4b79ad.png)
+![Untitled2](https://user-images.githubusercontent.com/84105167/145101797-d03c63ff-c882-4f3f-a6ab-a9bcde43def2.png)
+![platziburger](https://user-images.githubusercontent.com/84105167/145101798-0f8ed576-8027-47df-955a-0c6b90a01cc3.png)
