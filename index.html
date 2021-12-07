@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <title>Platzi Food | Home</title>
+</head>
+<body class="bg-gray-100">
+    <nav x-data="{open:false}" class="sticky top-0 z-10 w-full bg-secondary text-gray-100">
+    <header>
+        <div class="flex justify-between items-center px-2 bg-secondary text-white">
+            <div>
+            <img class="h-8 py-1" src="assets/images/logo-w.svg" alt="Platzi Food">
+            </div>
+            <div class="cursor-pointer text-2xl" @click="open = true">&equiv;</div> <!--aca el &equiv es como el iconito de menu-->
+        </div>
+    </header>
+    <div x-show="open" @click.away="open = false">
+    <div class="my-1 mx-2">
+    <input class="w-full leading-snug text-gray-500 py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secondary hover:bg-white focus:outline-none focus:ring-2" type="search" placeholder="Searching">
+    </div>
+
+    <div class="py-1 mx-2 md:flex justify-around"> 
+        <div class="flex"> Promotions:
+        <div class="ml-2 hover:text-primary">2x1</div>
+        <div class="ml-2 hover:text-primary">3x2</div>
+        <div class="ml-2 hover:text-primary">UrBirthday</div>
+        </div>
+    <div class="flex">
+        <div class=""> 
+            Per Rating:</div>
+    <div class="ml-2 hover:text-primary">&starf;</div>
+    <div class="mlpx hover:text-primary">&starf;</div>
+    <div class="mlpx hover:text-primary">&starf;</div>
+    <div class="mlpx hover:text-primary">&starf;</div>
+    <div class="mlpx hover:text-primary">&starf;</div>
+</div>
+<div>
+    <button class="rounded shadow-xl py-1 px-4 block hover:shadow-none bg-primary hover:text-white">
+        Filter</button>
+</div>  
+</div>
+</nav>
+
+    <main>
+        <div class="h-48 md:h-64 lg:h-80 bg-cover bg-center bg-no-repeat" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/28/13/34/bar-2689548_960_720.jpg');"></div>
+        <div class="container md:flex md:mx-auto">
+           <div class="cursor-pointer mx-2 mt-4 rounded md:w-1/2 md:flex md:bg-white md:rounded-lg">
+            <div>
+                <img class="rounded-lg md:rounded-r-sm md:w-full" src="https://images-na.ssl-images-amazon.com/images/I/6120Xom5nOL._SY300_QL70_.jpg" alt="Beef burger">
+            </div>
+                <!-- con &starf le agregue las estrellitas y colo text yellow -->
+                <div class="relative shadow-lg bg-white md:bg-transparent md:shadow-none md:my-auto rounded-lg  mx-2 -mt-4 p-2">
+                    <h2 class="tracking-tight font-semibold md:text-md text-gray-900 uppercase">ORGANIC MEAT BURGER</h2>
+                    <p class="text-gray-700 md:text-xs leading-snug">Organic Beef with cheese, vegetables and our Secret Sauce. <br>(Fries Include)</p>
+                    <div class="text-sm mt-2 font-semibold text-gray-700">0.00001 ETH</div>
+                    <div class="text-yellow-700 mt-2 text-xs">&starf;&starf;&starf;&starf;&starf; / 169 reviews</div>
+                </div>
+            </div> 
+            <div class="cursor-pointer mx-2 mt-4 rounded md:w-1/2 md:flex md:bg-white md:rounded-lg">
+                <div>
+                    <img class="rounded-lg md:rounded-r-sm md:w-full" src="https://images.meredith.com/content/dam/bhg/Images/recipe/42/R148769.jpg.rendition.largest.ss.jpg" alt="Chicken burger">
+                </div>
+                <div class="relative shadow-lg bg-white md:bg-transparent md:shadow-none md:my-auto rounded-lg  mx-2 -mt-4 p-2">
+                    <h2 class="tracking-tight font-semibold md:text-md text-gray-900 uppercase">VEGGIE BURGER</h2>
+                    <p class="text-gray-700 md:text-xs leading-snug">Medal of lentils with cheese, tomatoes, pickles and our Secret Sauce.<br>(Fries Include)</p>
+                    <div class="text-sm mt-2 font-semibold text-gray-700">0.00001 ETH</div>
+                    <div class="text-yellow-700 mt-2 text-xs">&starf;&starf;&starf;&starf;&starf; / 119 reviews</div>
+                </div> <!-- con &starf le agregue las estrellitas y color text yellow -->
+            </div>
+        </div>
+    </div>
+        <article class="mt-6">
+            <div> <h1 class="font-semibold text-xl flex  justify-center items-center"> We love to hear from you! Contact us below: </h1></div>
+        </article>
+        <form class="my-4 mx-2">
+            <div>
+                <div>Name</div>
+                <input class="w-full leading-snug text-gray-500 py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secondary hover:bg-white focus:outline-none focus:ring-2" type="text" placeholder="Lio"><!-- leading snug controla el espacio entre lineas -->
+            </div>
+            <div>
+                <div>Email</div>
+                <input class="w-full leading-snug text-gray-500 py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secondary hover:bg-white focus:outline-none focus:ring-2" type="email" placeholder="L10messi@gmail.com"><!-- leading snug controla el espacio entre lineas -->
+            </div>
+            <div>
+                <div>Suggestions</div>
+                <textarea class="w-full leading-snug text-gray-500 py-1 px-4 rounded border border-blue-300 bg-gray-200 placeholder-secondary hover:bg-white  focus:outline-none focus:ring-2" name="" id="" cols="30" rows="10">
+                </textarea>
+            </div>
+
+            <div>
+                <button class="rounded shadow-xl py-1 px-4 bg-gray-400 mx-auto block hover:shadow-none hover:bg-gray-700 hover:text-white">
+                    Send
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="lg:flex-row-reverse md:items-center lg:flex lg:justify-between bottom-0 w-full bg-secondary text-white">
+        <div class="mt-4 md:mb-4 flex justify-center items-center">
+            <div class="mx-2 hover:text-blue-700"><i class="fa fa-facebook"></i> Platzi Food</div>
+            <div class="mx-2 hover:text-blue-500"><i class="fa fa-twitter"></i> @platzifood</div>
+            <div class="mx-2 hover:text-pink-500"><i class="fa fa-instagram"></i> @platzifood</div>
+        </div>
+        <div class="mt-4 md:mb-4">
+            <ul class="flex justify-center items-center">
+                <li class="mx-2 hover:text-primary">About us</li>
+                <li class="mx-2 hover:text-primary">Support</li>
+                <li class="mx-2 hover:text-primary">Log up</li>
+                <li class="mx-2 hover:text-primary">Privacy</li>
+            </ul>
+        </div>
+        <div class="mt-4 md:mb-4">
+            <p class="flex  justify-center items-center">©All Rights Reserved. | https://github.com/olimajs</p>
+        </div>
+    </footer>
+</body>
+</html>
