@@ -3,7 +3,7 @@ Home Page of Burger's Restaurant (responsive)
 
 Welcome to PLATZIFOOD the best restaurant of burger's at Github.🍔💚🍟 
 
-- This project was made it with Tailwind.CSS and a little of Html5 (and if your read the code you can see a three or four lines scripts of ALPINE.JS) 
+- This project was made it with Tailwind.CSS <img align="center" alt="juan-tailwind" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" /> and a little of Html5 (and if your read the code you can see a three or four lines scripts of ALPINE.JS) 
 
 1) I use tailwind because it's now my favorite framework of css, his utility and the way it saves me time instead of creating several style.css, plus the usability of applying your styles in html faster. 
 a) i made the header first.
@@ -21,7 +21,7 @@ Pagina de Inicio para un Hamburgueseria (Responsive)
 
 BIENVENIDO A PLATZIFOOD,LA MEJOR HAMBURGUESETIA DE GITHUB 🍔💚🍟.
 
-- Este projecto fue hecho con Tailwind.Css y un poco de Html5 (y un par de lines de script en de la libreria ALPINE.JS)
+- Este projecto fue hecho con Tailwind.Css <img align="center" alt="juan-tailwind" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" /> y un poco de Html5 (y un par de lines de script en de la libreria ALPINE.JS)
 
 1) Utilize tailwind, un framework que se volvio mi libreria favorita de css, por su usabilidad y la forma que me hace ahorrar tiempo, gran utilidad ej :(@apply), además de no tener que crear style.css a cada rato.
 
